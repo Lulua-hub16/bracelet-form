@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bracelet Order Form</title>
+</head>
+<body>
+  <h1>Bracelet Order Form</h1>
+  <form action="/submit" method="POST">
+    <label>Name:</label><br>
+    <input type="text" name="name" required><br><br>
+
+    <label>Email:</label><br>
+    <input type="email" name="email" required><br><br>
+
+    <label>Bracelet Type:</label><br>
+    <select name="braceletType">
+      <option>Beaded</option>
+      <option>Charm</option>
+      <option>Friendship</option>
+      <option>Custom</option>
+    </select><br><br>
+
+    <label>Wrist Size (cm):</label><br>
+    <input type="number" name="size" required><br><br>
+
+    <label>Custom Notes:</label><br>
+    <textarea name="notes"></textarea><br><br>
+
+    <button type="submit">Submit Order</button>
+  </form>
+</body>
+</html>
